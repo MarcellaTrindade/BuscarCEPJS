@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar CEP JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form name="form" action="">
+                <label>Cep:</label>
+                <input name="cep" class="input" type="text" maxlength="9" id="cep" value="">
+                <br>
+                <input type="button" value="Buscar CEP" id="botao" name="botao" onclick="buscaCEP(this.value);">
+                <br>
+                <label>Rua:</label>
+                <input name="rua" class="input" type="text" id="rua" disabled>
+                <br>
+                <label>Bairro:</label>
+                <input name="bairro" class="input" type="text" id="bairro" disabled>
+                <br>
+                <label>Cidade:</label>
+                <input name="cidade" class="input" type="text" id="cidade" disabled>
+                <br>
+                <label>Estado:</label>
+                <input name="estado" class="input" type="text" id="uf" disabled>
+                <br>
+                <input type="reset" value="Limpar" id="limpar" (click)="apagaForm()">
+      </form>
+    </div>
+</div>
+      <script src="script.js"></script>
+</body>
+</html>
